@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponso — Turn Your Influence Into Income | For Creators</title>
+  <meta name="description" content="Partner with brands, promote products, showcase sponsored content, and earn money doing what you love. SWIFT SPONSORS HUB connects creators with real business opportunities.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/creator.css">
+</head>
+<body class="loading">
+  <!-- Skip to Main Content Link for Accessibility -->
+  <a href="#main" class="skip-to-content sr-only">Skip to main content</a>
+
+  <!-- ========================================================
+       PRELOADER / LOADING SCREEN
+       ======================================================== -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <div class="preloader-pulse-ring"></div>
+        <div class="preloader-pulse-ring"></div>
+        <img src="assets/icons/logo.svg" alt="Sponso Loading" class="preloader-logo">
+      </div>
+      <div class="preloader-bar-bg">
+        <div id="preloader-bar" class="preloader-bar-fill"></div>
+      </div>
+      <span id="preloader-percent" class="preloader-status">0%</span>
+    </div>
+  </div>
+
+  <!-- Ambient Side Glows (Diffuse atmospheric mint glows along viewport edges) -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="ambient-side-glows" aria-hidden="true">
+    <div class="side-glow side-glow-left-1"></div>
+    <div class="side-glow side-glow-right-1"></div>
+    <div class="side-glow side-glow-right-2"></div>
+    <div class="side-glow side-glow-left-2"></div>
+    <div class="side-glow side-glow-right-3"></div>
+    <div class="side-glow side-glow-left-3"></div>
+  </div>
+
+  <!-- ========================================================
+       STICKY / FLOATING HEADER
+       ======================================================== -->
+  <header class="site-header">
+    <div class="nav-pill-wrapper">
+      <a href="index.html" class="nav-brand" aria-label="Sponso Home">
+        <img src="assets/icons/logo.svg" alt="Sponso">
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html#solutions" class="nav-link">Solutions</a>
+        <a href="index.html#how-it-works" class="nav-link">How it works</a>
+        <a href="for-creators.html" class="nav-link active">
+          <span class="active-dot"></span> For Creators
+        </a>
+        <a href="index.html#publishers" class="nav-link">For Publishers</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-primary" data-open-modal="creator">Get Started</button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-nav-drawer">
+      <a href="index.html#solutions" class="nav-link">Solutions</a>
+      <a href="index.html#how-it-works" class="nav-link">How it works</a>
+      <a href="for-creators.html" class="nav-link active">For Creators</a>
+      <a href="index.html#publishers" class="nav-link">For Publishers</a>
+      <a href="#cta" class="btn-primary" style="margin-top: 10px; width: 100%;">Get Started</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========================================================
+         HERO SECTION
+         ======================================================== -->
+    <section class="creator-hero-section">
+      <div class="container">
+        <div class="creator-hero-card" data-reveal="zoom">
+          
+          <!-- Visual Background with Soft Gradient Mask -->
+          <div class="creator-hero-bg-visual">
+            <img src="assets/images/creator_hero.png" alt="Creator Collaborations">
+            <div class="creator-hero-bg-mask"></div>
+          </div>
+
+          <!-- Floating Badges for Visual Depth -->
+          <div class="creator-floating-chip creator-chip-1">
+            <span class="creator-chip-dot"></span>
+            <span>Brand Match: Tech Gear (+$1,250)</span>
+          </div>
+          <div class="creator-floating-chip creator-chip-2">
+            <span class="creator-chip-dot"></span>
+            <span>Creator Tier: Verified ✓</span>
+          </div>
+
+          <!-- Hero Left Content -->
+          <div class="creator-hero-content">
+            <div class="creator-hero-badge" data-reveal="up">
+              <span class="badge-pill-black">New</span>
+              <span class="badge-text">YOUR CREATIVITY. NEW POSSIBILITIES</span>
+              <img src="assets/icons/imgArrowRight.svg" alt="" width="14" height="14">
+            </div>
+
+            <h1 class="creator-hero-title" data-reveal="up">
+              Turn Your Influence Into <span class="gradient-text">Income.</span>
+            </h1>
+
+            <p class="creator-hero-desc" data-reveal="up">
+              Partner with brands, promote products, showcase sponsored content, and earn money doing what you love. SWIFT SPONSORS HUB connects creators with real business opportunities.
+            </p>
+
+            <div class="creator-hero-actions" data-reveal="up">
+              <button type="button" class="btn-primary" data-open-modal="creator">
+                <img src="assets/icons/img2User.svg" alt="" width="16" height="16">
+                <span>Join as a Creator</span>
+              </button>
+              <a href="#ways-to-grow" class="btn-secondary">
+                <span>Explore more</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATOR TYPES SHOWCASE BAR
+         ======================================================== -->
+    <section class="creator-types-bar scroll-section">
+      <div class="container">
+        <p class="creator-types-header" data-reveal="up">Made for every kind of creator</p>
+        <div class="creator-types-list">
+          <div class="creator-type-chip stagger-1" data-reveal="up">
+            <img src="assets/icons/creator_youtube.svg" alt="Youtubers">
+            <span>Youtubers</span>
+          </div>
+          <div class="creator-type-chip stagger-2" data-reveal="up">
+            <img src="assets/icons/creator_twitch.svg" alt="Streamers">
+            <span>Streamers</span>
+          </div>
+          <div class="creator-type-chip stagger-3" data-reveal="up">
+            <img src="assets/icons/creator_twitter.svg" alt="Influencers">
+            <span>Influencers</span>
+          </div>
+          <div class="creator-type-chip stagger-4" data-reveal="up">
+            <img src="assets/icons/creator_zoom.svg" alt="Bloggers & publishers">
+            <span>Bloggers & publishers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SIX WAYS TO GROW (FEATURE GRID)
+         ======================================================== -->
+    <section id="ways-to-grow" class="section-padding scroll-section">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 680px;">
+          <span class="eyebrow-badge" data-reveal="up">More than one way to grow</span>
+          <h2 class="section-title" data-reveal="up">Six ways to turn creativity into opportunity.</h2>
+          <p class="section-desc mx-auto" data-reveal="up">
+            From your first sponsored post to your next creative partnership, find the path that feels like you.
+          </p>
+        </div>
+
+        <div class="ways-grid">
+          <!-- Way 01 -->
+          <div class="way-card stagger-1" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-purple">
+                <img src="assets/icons/creator_feat1.svg" alt="Sponsored Content">
+              </div>
+              <span class="way-number">01</span>
+            </div>
+            <h3 class="way-card-title">Sponsored Content</h3>
+            <span class="way-card-tag">Your voice, their next story</span>
+            <p class="way-card-desc">
+              Earn by creating sponsored videos, posts, product reviews, and promotional content for brands.
+            </p>
+          </div>
+
+          <!-- Way 02 -->
+          <div class="way-card stagger-2" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-mint">
+                <img src="assets/icons/creator_feat2.svg" alt="Logo & Video Promotion">
+              </div>
+              <span class="way-number">02</span>
+            </div>
+            <h3 class="way-card-title">Logo & Video Promotion</h3>
+            <span class="way-card-tag">Make every view work harder</span>
+            <p class="way-card-desc">
+              Display brand logos, sponsored overlays, watermarks, and branded placements in your videos and livestreams.
+            </p>
+          </div>
+
+          <!-- Way 03 -->
+          <div class="way-card stagger-3" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-pink">
+                <img src="assets/icons/creator_feat3.svg" alt="Direct Brand Promotion">
+              </div>
+              <span class="way-number">03</span>
+            </div>
+            <h3 class="way-card-title">Direct Brand Promotion</h3>
+            <span class="way-card-tag">Better together</span>
+            <p class="way-card-desc">
+              Connect directly with businesses and get paid to promote their products, services, and brands.
+            </p>
+          </div>
+
+          <!-- Way 04 -->
+          <div class="way-card stagger-4" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-mint">
+                <img src="assets/icons/creator_feat4.svg" alt="Affiliate & Referral Marketing">
+              </div>
+              <span class="way-number">04</span>
+            </div>
+            <h3 class="way-card-title">Affiliate & Referral Marketing</h3>
+            <span class="way-card-tag">Share it. Recommend it. Earn.</span>
+            <p class="way-card-desc">
+              Earn commissions through unique referral links, successful purchases, and qualified customer actions.
+            </p>
+          </div>
+
+          <!-- Way 05 -->
+          <div class="way-card stagger-5" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-pink">
+                <img src="assets/icons/creator_feat5.svg" alt="Livestream Sponsorship">
+              </div>
+              <span class="way-number">05</span>
+            </div>
+            <h3 class="way-card-title">Livestream Sponsorship</h3>
+            <span class="way-card-tag">Go live. Grow your potential.</span>
+            <p class="way-card-desc">
+              Monetize gaming streams, live broadcasts, sponsored overlays, and branded mentions.
+            </p>
+          </div>
+
+          <!-- Way 06 -->
+          <div class="way-card stagger-6" data-reveal="up">
+            <div class="way-card-header">
+              <div class="way-icon-badge bg-purple">
+                <img src="assets/icons/creator_feat6.svg" alt="UGC & Creative Projects">
+              </div>
+              <span class="way-number">06</span>
+            </div>
+            <h3 class="way-card-title">UGC & Creative Projects</h3>
+            <span class="way-card-tag">Creativity is your currency</span>
+            <p class="way-card-desc">
+              Create promotional videos, product photography, unboxing content, and advertising creatives for brands.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         MAKE EVERY VIEW AN OPPORTUNITY (VIDEO SHOWCASE)
+         ======================================================== -->
+    <section class="section-padding scroll-section" style="background-color: var(--brand-25);">
+      <div class="container">
+        <div class="view-opportunity-split">
+          
+          <!-- Mock Video Player Showcase Card -->
+          <div class="mock-video-card" data-reveal="left">
+            <div class="mock-video-screen">
+              <img src="assets/images/creator_video_bg.png" alt="Video Preview Placement" class="video-thumb">
+              <div class="mock-video-sponsor-tag">
+                Sponsored placement · SAMPLE BRAND
+              </div>
+              <button class="mock-video-play-btn" aria-label="Play animated video preview">
+                <img src="assets/icons/creator_play.svg" alt="Play">
+              </button>
+              <div class="mock-video-brand-badge">
+                <img src="assets/icons/creator_badge.svg" alt="">
+                <span>YOUR BRAND</span>
+              </div>
+            </div>
+
+            <!-- Player Controls Bottom Bar -->
+            <div class="mock-video-controls">
+              <button class="control-btn" aria-label="Play">
+                <img src="assets/icons/creator_play.svg" alt="" width="16" height="16">
+              </button>
+              <div class="mock-video-scrubber">
+                <div class="mock-video-scrubber-fill"></div>
+              </div>
+              <span class="mock-video-preview-label">Visual preview</span>
+              <button class="control-btn" aria-label="Mute preview">
+                <img src="assets/icons/creator_mute.svg" alt="" width="16" height="16">
+              </button>
+            </div>
+          </div>
+
+          <!-- Text & Checklist Content -->
+          <div class="opportunity-info" data-reveal="right">
+            <span class="eyebrow-badge">Give your next view more value</span>
+            <h2 class="section-title">Make Every View an Opportunity.</h2>
+            <p class="section-desc">
+              Bring brands into your content naturally, with placements that respect your style and your audience. Agree on the details and make sponsorships clear.
+            </p>
+
+            <div class="opportunity-checklist">
+              <div class="opportunity-check-item">
+                <img src="assets/icons/creator_check.svg" alt="✓">
+                <span>Logo placements in videos</span>
+              </div>
+              <div class="opportunity-check-item">
+                <img src="assets/icons/creator_check.svg" alt="✓">
+                <span>Sponsored video intros and outros</span>
+              </div>
+              <div class="opportunity-check-item">
+                <img src="assets/icons/creator_check.svg" alt="✓">
+                <span>Livestream overlays and brand mentions</span>
+              </div>
+              <div class="opportunity-check-item">
+                <img src="assets/icons/creator_check.svg" alt="✓">
+                <span>Sponsored visual placements</span>
+              </div>
+              <div class="opportunity-check-item">
+                <img src="assets/icons/creator_check.svg" alt="✓">
+                <span>Long-term brand partnerships</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         YOUR EARNINGS. YOUR CHOICE. (PAYOUTS)
+         ======================================================== -->
+    <section class="section-padding scroll-section">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 600px;">
+          <span class="eyebrow-badge" data-reveal="up">From completed work to your next possibility</span>
+          <h2 class="section-title" data-reveal="up">Your Earnings. Your Choice.</h2>
+          <p class="section-desc mx-auto" data-reveal="up">
+            Explore the proposed ways to receive your approved creator earnings.
+          </p>
+        </div>
+
+        <!-- 4 Payment Method Cards (bKash, Nagad, Payoneer, Bank Transfer) -->
+        <div class="payout-methods-grid">
+          <!-- 1: bKash -->
+          <div class="payout-method-card stagger-1" data-reveal="up">
+            <div class="payout-logo-box">
+              <img src="assets/images/payment_bkash.png" alt="bKash" class="payment-logo payment-logo-bkash">
+            </div>
+            <span class="payout-method-tag">Proposed method</span>
+          </div>
+
+          <!-- 2: Nagad -->
+          <div class="payout-method-card stagger-2" data-reveal="up">
+            <div class="payout-logo-box">
+              <img src="assets/images/payment_nagad.png" alt="Nagad" class="payment-logo payment-logo-nagad">
+            </div>
+            <span class="payout-method-tag">Proposed method</span>
+          </div>
+
+          <!-- 3: Payoneer -->
+          <div class="payout-method-card stagger-3" data-reveal="up">
+            <div class="payout-logo-box">
+              <img src="assets/images/payment_payoneer.png" alt="Payoneer" class="payment-logo payment-logo-payoneer">
+            </div>
+            <span class="payout-method-tag">Proposed method</span>
+          </div>
+
+          <!-- 4: Bank Transfer -->
+          <div class="payout-method-card stagger-4" data-reveal="up">
+            <div class="payout-logo-box">
+              <div class="bank-icon-wrap">
+                <img src="assets/icons/payment_bank.svg" alt="Bank Transfer" width="26" height="26">
+                <span>Bank Transfer</span>
+              </div>
+            </div>
+            <span class="payout-method-tag">Proposed method</span>
+          </div>
+        </div>
+
+        <p class="payout-disclaimer" data-reveal="up">
+          Method availability is not yet confirmed and may vary by region and account eligibility.
+        </p>
+
+        <!-- Bottom Split: 4 Steps + 3 Features -->
+        <div class="payout-bottom-split">
+          
+          <!-- Left: Payout Steps -->
+          <div class="payout-steps-col" data-reveal="left">
+            <h3 class="payout-steps-title">A clear path to your payout.</h3>
+            <div class="payout-steps-list">
+              <div class="payout-step-item">
+                <span class="payout-step-num">1</span>
+                <span class="payout-step-text">Earn and complete campaigns.</span>
+              </div>
+              <div class="payout-step-item">
+                <span class="payout-step-num">2</span>
+                <span class="payout-step-text">Get approved earnings added to your available balance.</span>
+              </div>
+              <div class="payout-step-item">
+                <span class="payout-step-num">3</span>
+                <span class="payout-step-text">Select your preferred payment method.</span>
+              </div>
+              <div class="payout-step-item">
+                <span class="payout-step-num">4</span>
+                <span class="payout-step-text">Submit a withdrawal request and track its status.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Payout Features -->
+          <div class="payout-features-col" data-reveal="right">
+            <div class="payout-features-list">
+              <div class="payout-feature-row">
+                <img src="assets/icons/payout_min.svg" alt="" class="payout-feature-icon">
+                <div>
+                  <h4 class="payout-feature-title">Minimum withdrawal</h4>
+                  <p class="payout-feature-desc">To be announced. Review the applicable requirements before requesting a payout.</p>
+                </div>
+              </div>
+
+              <div class="payout-feature-row">
+                <img src="assets/icons/payout_history.svg" alt="" class="payout-feature-icon">
+                <div>
+                  <h4 class="payout-feature-title">Transaction history & withdrawal tracking</h4>
+                  <p class="payout-feature-desc">Planned account tools will show transactions and withdrawal status.</p>
+                </div>
+              </div>
+
+              <div class="payout-feature-row">
+                <img src="assets/icons/payout_secure.svg" alt="" class="payout-feature-icon">
+                <div>
+                  <h4 class="payout-feature-title">Secure payment processing</h4>
+                  <p class="payout-feature-desc">Payment verification and method-specific requirements will be explained before launch.</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="payout-disclaimer" style="text-align: left; margin-top: 24px; margin-bottom: 0;">
+              Processing times have not been announced. No live payment services are connected in this preview.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATOR STORIES / TESTIMONIALS
+         ======================================================== -->
+    <section class="section-padding scroll-section" style="background-color: var(--brand-25);">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 650px;">
+          <span class="eyebrow-badge" data-reveal="up">Imagine your next chapter</span>
+          <h2 class="section-title" data-reveal="up">Different creators. New possibilities.</h2>
+          <p class="section-desc mx-auto" data-reveal="up">
+            Illustrative stories of what the right partnership could mean for a creator.
+          </p>
+        </div>
+
+        <div class="stories-grid">
+          <!-- Story 1 -->
+          <div class="story-card stagger-1" data-reveal="up">
+            <div class="story-card-top">
+              <div class="story-icon-badge">
+                <img src="assets/icons/story_icon1.svg" alt="">
+              </div>
+              <span class="story-tag">Illustrative story</span>
+            </div>
+            <h3 class="story-card-title">Finding a natural fit</h3>
+            <p class="story-quote">
+              “A product review feels so much more authentic when the brand fits what my community already cares about.”
+            </p>
+            <span class="story-author">Lifestyle creator · Sample testimonial</span>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="story-card stagger-2" data-reveal="up">
+            <div class="story-card-top">
+              <div class="story-icon-badge">
+                <img src="assets/icons/story_icon2.svg" alt="">
+              </div>
+              <span class="story-tag">Illustrative story</span>
+            </div>
+            <h3 class="story-card-title">Bringing a brand into the moment</h3>
+            <p class="story-quote">
+              “A thoughtful stream overlay can support a brand without taking away from the experience my viewers come for.”
+            </p>
+            <span class="story-author">Gaming streamer · Sample testimonial</span>
+          </div>
+
+          <!-- Story 3 -->
+          <div class="story-card stagger-3" data-reveal="up">
+            <div class="story-card-top">
+              <div class="story-icon-badge">
+                <img src="assets/icons/story_icon3.svg" alt="">
+              </div>
+              <span class="story-tag">Illustrative story</span>
+            </div>
+            <h3 class="story-card-title">Letting creativity lead</h3>
+            <p class="story-quote">
+              “Creative projects give me another way to use my filming and photography skills—even beyond my own audience.”
+            </p>
+            <span class="story-author">UGC creator · Sample testimonial</span>
+          </div>
+        </div>
+
+        <p class="payout-disclaimer" style="margin-top: 32px; margin-bottom: 0;" data-reveal="up">
+          These are fictional examples, not real creator endorsements or verified earning results.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATOR FAQ SECTION
+         ======================================================== -->
+    <section class="faq-section section-padding scroll-section" id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          
+          <!-- Left Column -->
+          <div class="faq-info-col" data-reveal="left">
+            <span class="eyebrow-badge">A little clarity goes a long way</span>
+            <h2 class="section-title">Good questions.<br>Straight answers.</h2>
+            <p class="section-desc" style="margin-bottom: 24px;">
+              Curious about your next step?<br>Here’s a good place to start.
+            </p>
+            <a href="#cta" class="link-cyan link-arrow" style="font-weight: 600;">
+              <span>Contact us</span>
+              <img src="assets/icons/2036_1306.svg" alt="" width="14" height="14">
+            </a>
+          </div>
+
+          <!-- Right Column: Accordion Items -->
+          <div class="faq-list" data-reveal="right">
+            
+            <div class="faq-item active">
+              <button type="button" class="faq-question-btn" aria-expanded="true" aria-controls="faq-desc-1" id="faq-btn-1">
+                <span class="faq-title">What is Sponso?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-1" role="region" aria-labelledby="faq-btn-1">
+                <p>SWIFT SPONSORS HUB brings an advertising network, creator sponsorship marketplace, and website and app monetization into a single connected growth ecosystem.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-desc-2" id="faq-btn-2">
+                <span class="faq-title">Who is the platform for?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-2" role="region" aria-labelledby="faq-btn-2">
+                <p>Sponso is built for ambitious advertisers seeking real performance, content creators looking for transparent brand deals, and publishers looking to maximize their ad revenue.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-desc-3" id="faq-btn-3">
+                <span class="faq-title">Can I advertise locally and internationally?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-3" role="region" aria-labelledby="faq-btn-3">
+                <p>Yes! With our hyper-local geo-targeting, you can reach audiences within specific zip codes or expand across global markets with localized campaign parameters.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-desc-4" id="faq-btn-4">
+                <span class="faq-title">How do creator sponsorships work?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-4" role="region" aria-labelledby="faq-btn-4">
+                <p>Brands propose campaigns with clear deliverables, and creators accept offers that align with their audience. Funds are held securely in escrow until campaign milestones are verified.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-desc-5" id="faq-btn-5">
+                <span class="faq-title">How can I monetize my website or app?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-5" role="region" aria-labelledby="faq-btn-5">
+                <p>Integrate our lightweight SDK or ad tags in minutes. Our AI header bidding engine connects your ad inventory with premier global and local ad demand partners for maximum CPMs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-desc-6" id="faq-btn-6">
+                <span class="faq-title">Is the platform available to join now?</span>
+                <img src="assets/icons/2036_1319.svg" alt="" class="faq-icon" width="16" height="16">
+              </button>
+              <div class="faq-answer" id="faq-desc-6" role="region" aria-labelledby="faq-btn-6">
+                <p>We are currently onboarding partners in rolling early-access cohorts. Submit your application today to secure your priority access spot.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CALL TO ACTION BANNER
+         ======================================================== -->
+    <section id="cta" class="cta-section scroll-section">
+      <div class="container">
+        <div class="cta-banner-card" data-reveal="zoom">
+          <!-- Background Concentric Circles SVGs -->
+          <img src="assets/icons/imgEllipse6.svg" alt="" class="cta-circles-svg cta-circle-left">
+          <img src="assets/icons/imgEllipse7.svg" alt="" class="cta-circles-svg cta-circle-right">
+          
+          <div class="cta-content">
+            <h2 class="cta-title">Your next chapter of growth starts here.</h2>
+            <p class="cta-desc">One platform. More connections. A world of opportunity.</p>
+            <button type="button" class="btn-primary" data-open-modal="creator">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <!-- Logo -->
+        <a href="index.html" class="footer-brand" aria-label="Sponso">
+          <img src="assets/icons/logo.svg" alt="Sponso">
+        </a>
+
+        <!-- Footer Links -->
+        <div class="footer-links-nav">
+          <a href="index.html#solutions" class="footer-link">Solutions</a>
+          <a href="index.html#how-it-works" class="footer-link">How it works</a>
+          <a href="for-creators.html" class="footer-link" style="color: var(--brand-main); font-weight: 600;">For Creators</a>
+          <a href="index.html#publishers" class="footer-link">For Publishers</a>
+          <a href="#" class="footer-link">About</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon-btn" aria-label="Facebook">
+            <img src="assets/icons/2036_1378.svg" alt="Facebook" width="18" height="18">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <img src="assets/icons/2036_1379.svg" alt="Instagram" width="18" height="18">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="X">
+            <img src="assets/icons/2036_1380.svg" alt="X" width="18" height="18">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+            <img src="assets/icons/2036_1381.svg" alt="LinkedIn" width="18" height="18">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="YouTube">
+            <img src="assets/icons/2036_1382.svg" alt="YouTube" width="18" height="18">
+          </a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom Row -->
+      <div class="footer-bottom-row">
+        <p class="copyright-text">© 2026 Sponso. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#" class="legal-link">Privacy Policy</a>
+          <a href="#" class="legal-link">Terms of Service</a>
+          <a href="#" class="legal-link">Cookies Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       ACCESSIBLE CREATOR JOIN MODAL DIALOG
+       ======================================================== -->
+  <div id="creator-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-card">
+        <!-- Close Button -->
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-badge">
+            <span class="active-dot"></span>
+            <span>Early Access Creator Cohort</span>
+          </div>
+          <h2 id="modal-title" class="modal-title">Turn Your Influence Into Income</h2>
+          <p class="modal-subtitle">Connect directly with verified brands, automated contracts, and multi-currency payouts.</p>
+        </div>
+
+        <form id="creator-join-form" class="modal-form" novalidate>
+          <div class="form-group">
+            <label for="form-name" class="form-label">Full Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="e.g. Tamim Hasan" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="form-email" class="form-label">Creator / Business Email <span class="required-star">*</span></label>
+            <input type="email" id="form-email" class="form-input" placeholder="name@creator.com" required autocomplete="email">
+            <span class="form-error-msg" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="flex: 1;">
+              <label for="form-platform" class="form-label">Primary Channel</label>
+              <select id="form-platform" class="form-select">
+                <option value="YouTube">YouTube</option>
+                <option value="Twitch">Twitch</option>
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Blog / Website">Blog / Website</option>
+              </select>
+            </div>
+            <div class="form-group" style="flex: 1.2;">
+              <label for="form-handle" class="form-label">Handle or Channel URL</label>
+              <input type="text" id="form-handle" class="form-input" placeholder="@yourchannel">
+            </div>
+          </div>
+
+          <button type="submit" id="form-submit-btn" class="btn-primary modal-submit-btn">
+            <img src="assets/icons/img2User.svg" alt="" width="16" height="16">
+            <span>Apply for Priority Cohort</span>
+          </button>
+        </form>
+
+        <!-- Live Server Response Alert -->
+        <div id="modal-success-box" class="modal-success-box" style="display: none;" role="status">
+          <div class="success-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title">Application Submitted!</h3>
+          <p id="modal-success-message" class="success-desc">
+            Your spot in Priority Cohort #1 is confirmed. We will reach out via email shortly.
+          </p>
+          <div class="success-details-card" id="modal-submission-preview"></div>
+          <button type="button" class="btn-secondary" id="modal-done-btn" style="width: 100%; margin-top: 16px;">
+            Done
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
